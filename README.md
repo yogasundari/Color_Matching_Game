@@ -11,17 +11,6 @@ Files
 index.html: The HTML file that defines the structure of the game.
 styles.css: The CSS file that provides styling for the game elements.
 scripts.js: The JavaScript file that contains the game logic.
-Setup
-Clone the Repository
-
-bash
-Copy code
-git clone <repository-url>
-cd <repository-directory>
-Open the Project
-
-Open index.html in your web browser to start playing the game.
-
 How to Play
 Start the Game: Click the "Start / Restart" button to begin a new game.
 Match Cards: Click on two cards to flip them over. If they match, they will stay flipped. If not, they will flip back after a short delay.
@@ -30,20 +19,17 @@ Win or Lose: The game ends when all pairs are matched or the time runs out. A co
 Code Explanation
 index.html
 This file sets up the basic structure of the game, including:
-
 A heading (<h1>) for the game title.
 A container (<div id="container">) that holds the game grid and control buttons.
 An empty <div id="game-container"> where the game cards are dynamically added.
 A status display area (<div id="startdiv">) showing the score, timer, and start/restart button.
 styles.css
 This file provides styling for the game elements:
-
 The body, header, and container styles for layout and appearance.
 Grid layout for the game cards, ensuring they are evenly spaced.
 Card styles including their appearance when matched and their default state.
 scripts.js
 This file contains the game logic:
-
 Card Shuffling: The shuffle function randomizes the order of the cards.
 Card Generation: The generateCards function creates and displays the card elements.
 Card Click Handling: The handleCardClick function manages card interactions and tracks selected cards.
